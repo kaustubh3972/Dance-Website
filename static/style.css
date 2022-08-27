@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=DynaPuff:wght@500&family=Playfair+Display:wght@700&family=Ultra&display=swap");
+* {
+	margin: 0px;
+	box-sizing: border-box;
+	padding: 0px;
+}
+#logo {
+	display: flex;
+	color: white;
+	font-size: 25px;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 11rem;
+}
+#logo img {
+	height: 90px;
+	filter: drop-shadow(2px 4px 6px black);
+}
+#navbar {
+	background-color: #2d2550;
+	font-family: "DynaPuff", cursive;
+	font-size: 25px;
+	padding: 0.6rem;
+}
+#navbar ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: center; */
+}
+#navbar li {
+	list-style: none;
+}
+#navbar li a {
+	text-decoration: none;
+	padding: 1rem;
+	color: white;
+}
+#navbar li a:hover {
+	color: black;
+	background-color: white;
+	border-radius: 30px;
+	text-decoration: underline;
+}
+#introSection {
+	background: center / cover no-repeat url("../static/images/dancebg.jpg");
+	font-family: "Dosis";
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 3rem;
+	align-items: center;
+	padding-bottom: 4em;
+	text-shadow: 4px 1px black;
+	height: 425px;
+	opacity: 0.9;
+	/* background-color: blue; */
+}
+#introSection div.small {
+	font-size: 2.1rem;
+}
+#missionSection {
+	height: 350px;
+	width: 65%;
+	margin: auto;
+}
+#missionSection h2 {
+	text-align: center;
+	font-family: "DynaPuff", cursive;
+	padding: 5px;
+	font-size: 2.5rem;
+}
+.card {
+	border: 2px solid black;
+	width: 25%;
+	margin: 30px 36px;
+	height: 60%;
+	display: inline-block;
+	border-radius: 20px;
+	background-color: rgb(178 189 255 / 29%);
+}
+.card h3 {
+	text-align: center;
+	font-weight: lighter;
+	font-family: "DynaPuff", cursive;
+	font-family: "Ultra", serif;
+	margin: 10px;
+}
+.card-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-img {
+	height: 100px;
+}
+.card-img img {
+	height: inherit;
+}
+.card-content {
+	padding: 0px 5px;
+}
+.card-content {
+	font-size: 18px;
+}
+#sponsorSection {
+	height: 250px;
+	background-color: #5637df9d;
+}
+#sponsorSection h2 {
+	text-align: center;
+	font-family: "DynaPuff", cursive;
+	padding: 5px;
+	font-size: 2.5rem;
+}
+#sponsors {
+	height: 148px;
+	max-width: 903px;
+	margin: 30px auto;
+}
+.spImage {
+	height: 80%;
+	margin: 0px 18px;
+}
+#footer {
+	height: 40px;
+	background-color: black;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 15px;
+}

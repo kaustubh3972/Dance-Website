@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+
+block content
+    body
+        section#introSection 
+            div Welcome to K's Dance Academy
+            div.small Rock n Roll Soniye
+        section#missionSection 
+            h2  Our Mission
+            div.card
+                h3 Make Everyone Dance
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/1.png")
+                    div.card-content
+                        p This is the best dance academy in your area
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/2.png")
+                    div.card-content
+                        p This is the best dance academy in your area
+            div.card
+                h3 Reach Everyone Online
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/3.png")
+                    div.card-content
+                        p This is the best dance academy in your area
+        section#sponsorSection 
+            h2  Our Sponsors 
+            div#sponsors
+                img(src="/static/images/logo1.png" alt="sponsor Image" class="spImage")
+                img(src="/static/images/logo2.png" alt="sponsor Image" class="spImage")
+                img(src="/static/images/logo3.svg" alt="sponsor Image" class="spImage")
+                img(src="/static/images/logo4.png" alt="sponsor Image" class="spImage")
+                img(src="/static/images/logo5.png" alt="sponsor Image" class="spImage")

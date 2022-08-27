@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=DynaPuff:wght@500&family=Playfair+Display:wght@700&family=Ultra&display=swap");
+.container {
+	min-height: 75vh;
+	/* display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; */
+}
+h1 {
+	text-align: center;
+	margin: 15px 0px;
+	font-family: "DynaPuff", cursive;
+	font-size: 45px;
+}
+.myForm {
+	display: flex;
+	/* width: 100%; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.myInput {
+	width: 35%;
+	margin: 5px 0px;
+	padding: 0px 15px;
+	border: 3px solid black;
+	border-radius: 10px;
+	height: 40px;
+	font-size: 25px;
+}
+.btn {
+	height: 50px;
+	width: 120px;
+	margin: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #2d2550;
+	color: white;
+	border-radius: 25px;
+}
+.btn:hover {
+	background-color: #846deb;
+	color: white;
+}
