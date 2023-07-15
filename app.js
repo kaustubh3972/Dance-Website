@@ -1,12 +1,18 @@
 const express = require("express");
+const favicon = require("serve-favicon");
 const path = require("path");
 const app = express();
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const bodyparser = require("body-parser"); //IT IS NOT USED
-mongoose.connect("mongodb://localhost/contactDance", {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-});
+const mongoose = require("mongoose");
+main().catch((err) => console.log(err));
+async function main() {
+	await mongoose.connect("mongodb://127.0.0.1/contactDance");
+}
+// mongoose.connect("mongodb://localhost/contactDance", {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true,
+// });
 const port = 8000;
 // DEFINE MONGOOSE SCHEMA
 const contactSchema = new mongoose.Schema({
@@ -20,6 +26,7 @@ const Contact = mongoose.model("Contact", contactSchema);
 // EXPRESS SPECIFIC STUFF
 app.use("/static", express.static("static")); // FOR SERVING STATIC FILES
 app.use(express.urlencoded());
+app.use(favicon(path.join(__dirname, "static", "images", "favicon.ico.png")));
 // PUG SPECIFIC STUFF
 app.set("view engine", "pug"); // SETTING THE TEMPLATE ENGINE AS PUG
 app.set("views", path.join(__dirname, "views")); // SET THE VIEWS DIRECTORY
