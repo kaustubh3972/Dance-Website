@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=DynaPuff:wght@500&family=Playfair+Display:wght@700&family=Ultra&display=swap");
 * {
 	margin: 0px;
-	box-sizing: border-box;
-	padding: 0px;
+	/* box-sizing: border-box; */
+	/* padding: 0px; */
 }
+/* 1.5rem=25px */
 #logo {
 	display: flex;
 	color: white;
-	font-size: 25px;
+	font-size: 1.5rem;
 	align-items: center;
-	margin-left: 50px;
+	/* margin-left: 50px; */
 	margin-right: 11rem;
+	cursor: pointer;
 }
 #logo img {
 	height: 90px;
@@ -19,7 +21,7 @@
 #navbar {
 	background-color: #2d2550;
 	font-family: "DynaPuff", cursive;
-	font-size: 25px;
+	font-size: 1.5rem;
 	padding: 0.6rem;
 }
 #navbar ul {
@@ -53,7 +55,8 @@
 	align-items: center;
 	padding-bottom: 4em;
 	text-shadow: 4px 1px black;
-	height: 425px;
+	/* height: 425px; */
+	height: 20rem;
 	opacity: 0.9;
 	/* background-color: blue; */
 }
@@ -61,8 +64,9 @@
 	font-size: 2.1rem;
 }
 #missionSection {
-	height: 350px;
-	width: 65%;
+	/* height: 350px; */
+	height: 20rem;
+	/* width: 65%; */
 	margin: auto;
 }
 #missionSection h2 {
@@ -71,13 +75,18 @@
 	padding: 5px;
 	font-size: 2.5rem;
 }
+.cards-panel {
+	text-align: center;
+}
 .card {
 	border: 2px solid black;
-	width: 25%;
-	margin: 30px 36px;
-	height: 60%;
+	width: 14%;
+	/* margin: 30px 36px; */
+	margin: 1rem;
+	padding: 1%;
+	/* height: 60%; */
 	display: inline-block;
-	border-radius: 20px;
+	border-radius: 1.5rem;
 	background-color: rgb(178 189 255 / 29%);
 }
 .card h3 {
@@ -99,14 +108,12 @@
 	height: inherit;
 }
 .card-content {
-	padding: 0px 5px;
-}
-.card-content {
-	font-size: 18px;
+	padding: 0px 1%;
+	font-size: 1.2rem;
 }
 #sponsorSection {
 	height: 250px;
-	background-color: #5637df9d;
+	background-color: #adabf3cc;
 }
 #sponsorSection h2 {
 	text-align: center;
